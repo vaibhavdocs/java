@@ -1,4 +1,4 @@
-### Types of comment
+### Types of comments
 - Single Line Comment
 - Block Line Comment
 - Javadoc comment :
@@ -6,8 +6,8 @@
 
 
 
-## Datatypes 
-### Primtive Dataype
+### Datatypes 
+#### Primtive Dataype
 - Integer  Type
     - byte - bits = 8
     - short - bits = 16
@@ -61,7 +61,7 @@
 - Parameters passed "by reference"
 - Parameters are passed positionally
 
-## Main methods runs as the Program Entry point and command line arguments are passed to it
+### Main methods runs as the Program Entry point and command line arguments are passed to it
 
 
 ### Strings

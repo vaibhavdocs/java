@@ -22,7 +22,7 @@
 ### Just-in-time compilation 
 // To be written later
 
-## Java Enterprise Edition (Java EE) -
+### Java Enterprise Edition (Java EE) -
 Enterprise edition of Java (Web Application) are different from the Single Desktop Applications. They make use of several external libraries.
 
 Java EE has several API which makes it easier for the Developer to not to maintain the external libraries by themselves.
@@ -38,7 +38,7 @@ Example of the API - Java Persistence Architecture, Enterprise Java Beans and Ja
 - When using Microframeworks such as Spring/ Springboot instead of Java EE, everything bundled up into Single Java Application and which can be run directly on the JVM. There is no big application server involved anymore.
 
 
-## Java on Android 
+### Java on Android 
 - Java != Android Java
 - Android apps are written in older versionof java such as Java 7 or 8
 - Flow of the code in Java
@@ -48,11 +48,11 @@ Example of the API - Java Persistence Architecture, Enterprise Java Beans and Ja
 - Dalvik Virtual Machine behaves same as JVM but has different design goals
 
 
-## Spring Framework
+### Spring Framework
 
 - We declare components and dependencies and at the runtime in the Spring dependency injection container
 
-## JRE and JDK
+### JRE and JDK
 - JRE is Java Runtime Environment enabled java code execution. Basically executes java bytecode
 - JDK provides tools required to create Java apps.
 - **IDE** -> **JDK** -> **Java App** -> **JRE** -> **Host Environment**
