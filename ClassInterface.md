@@ -30,3 +30,19 @@ static {
 
 ### Passing Objects as Parameters
 - Primitive data types are passed as values. Copy of the values are passed into parameters but in the case of the Objects we pass "By reference"
+- Changes made to object's reference still reflects after method execution
+
+### Method Overloading
+- Example
+    - add1Passenger()
+    - add1Passenger(int bags)
+    - add1Passenger(int bags, int carryOne)
+
+- Curios case
+    ``` short threebags = 3;
+        obj.add1Passenger(threebags,3) // there is no suhc overload which accepts the short as input 
+    ```
+    In the above case, compiler will automatically convert short into integer and hence there is an overload available now.
+
+### Varible number of the Parameters
+- public void addPassengers(Passenger... list)  --  this can take variable number of the parameters
