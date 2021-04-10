@@ -111,3 +111,33 @@ o.add1Package() // will not work, object reference does not know about the metho
 CargoFlight cf = (CargoFlight) o;
 cf.add1Package()
 ```
+
+
+### Super()
+- Similar as *this*, *this* refers to current object and *super* does that too but key difference is
+*super* treats the object as the instance of the base class.
+
+### Preventing Inheritance and Method Overriding
+
+- *final* keyword can change default behaviour such as 
+    - Can prevent class extending
+    - Can prevent method overriding
+
+### Requiring Inheritance and Method Overriding
+
+- *abstract* keyword can change default behaviour such as 
+    - Can prevent class extending
+    - Can prevent method overriding
+
+- **Abstract Methods** can only be used in **Abstract classes** and it does not have body
+
+### Inheritance and Constructors
+- We use **super()**  to call base class default constructor
+- Base class default no parametric constructor is always called otherwise if explicit call has been made to base class constructor
+
+
+
+### Enums
+
+- First value in the enum is lowest order and last value is of the highest order
+- we can apply compareTo() to enums to see if orders is higher or lower.
