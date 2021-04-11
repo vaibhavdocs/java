@@ -141,3 +141,58 @@ cf.add1Package()
 
 - First value in the enum is lowest order and last value is of the highest order
 - we can apply compareTo() to enums to see if orders is higher or lower.
+- Every value in the enum class is acutally instance of the enum class so it has certain methods available to it 
+
+
+### Creating Abstract Relationships with Interfaces
+- Why do we need Interfaces? 
+    -   A class directly extends only one class. We make use of Interface to reuse features of other classes without inheritance
+
+- Comparable interface provides a contract for ordering 
+
+- Generics interface implementation
+    ```
+        class Passenger implements Comparable<**Passenger**> 
+    ```
+    - Allows stronger typing
+    - Allows specializing interface on a type
+
+- A Class can implement multiple interfaces
+- Interface members are implicitly public.
+- An interface can extend another interface
+    - Implementing a derived interface implies implementation of the base
+- Interface can be understood as a contract
+- *default* keyword at the start of method signature in the interface lets consuming classes not necessarily define the method. This eases the process of introducing new methods to Interface. 
+
+### Inner Classes & Anonymous classes
+- Nested Types
+    - Nested Type
+        - A type declared within another type
+        - These type are members of the enclosing type
+        - Nested type can access private members of the enclosing class
+        - Nested types support all access modifiers
+
+    - Nesting types for naming scope
+        - Type name scoped within enclosing type
+        - No relationship between nestedn type and enclosing type instance
+
+    - Applies to the following nested types
+        - Static class nested within class
+        - All classes nested within interfaces
+        - All nested interfaces
+
+- Inner Class
+    - Type name scoped within enclosing type
+    - Creates instance relationship
+    - Each instance of thenested class associated with an instance of enclosing class
+
+    - Applies to the following nested type
+        - Non static classes nested within classes
+
+- Anonymous Class
+    - Declared as part of their creation
+    - Use as simple interface implementations
+    - Use as simple class extension
+    
+    - Anonymour classes are inner classes
+        - Instance is associated with enclosing class instance
