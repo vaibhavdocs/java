@@ -69,3 +69,36 @@
     - In the case pf TreeMap, worst case scenario seems to O(log(N)) since Log(N) is the height of the
     Red / Black tree (Self balancing tree, sorted in such a way that values lesser than node goes to left and others goes to right)
 
+
+
+### Java Streams 
+ 
+- High level construct, it provides lesser control over and freedom to control it but in the case of Loops, it is low level construct and can have more arbitrary activity. 
+- Streams are alternative option to the loops
+- Lesser boilterplate code
+- Better readability  but it subjective, seems more close to the business object
+- Only available in the Java 8 or later
+![streams_loops png](https://user-images.githubusercontent.com/36666451/118023080-bb9de000-b37a-11eb-8951-bf8868f167df.png)
+
+
+### Factory of()
+
+- We can create immutable collections using `.of()`
+
+### Set 
+
+- Collection with uniqueness
+
+#### Hashcode & Equals
+
+- If two objects are equal then their hashcode will be equal as well
+- And there are two types of equality -
+    - Reference based
+        - if two objects are equal. Equal method is inherited from the object  
+    - Value based
+        - If the values inside objects are equal. Requires custom implementation.
+
+- HashSet 
+- TreeSet
+    - Based on the Red/black binary tree with defined sort order
+
