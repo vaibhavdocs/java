@@ -44,4 +44,33 @@
 
     ![derivedmethods](https://user-images.githubusercontent.com/36666451/118319389-508a1000-b518-11eb-875e-0bab78c5327e.png)
 
-    - These InputStreamReader and OutputStreamWriter provides layered binary and text streams. Basically allows us to Implement a reader stream over the InputStream. Reading as text stream over a binary stream.  
+    - These InputStreamReader and OutputStreamWriter provides layered binary and text streams. Basically allows us to Implement a reader stream over the InputStream. Reading as text stream over a binary stream. 
+
+    - Cleanup the streams with the resources is a tricky task, since closeable interface implemented by the streams may not be optimum, so it implements AutoCloseable interface which provides Automatic Cleanup 
+
+    `Streams` <--- (implements) `Closeable Interface` <--- `AutoCloseable`
+
+    - `Try-with-resources`
+        - Automates the cleanup of 1 or more resources
+            - A "resource" is any type that implements AutoCloseable interface
+        - Example 
+            - 
+            ```
+            try (Reader reader = Helper.openReader("file.txt"))
+            ```
+    
+- Chaining Streams 
+![chainingStreams](https://user-images.githubusercontent.com/36666451/118376874-40416600-b5e8-11eb-8234-6c5f26d8b14c.png)
+
+
+- File and Buffered Streams
+
+    - Buffered Streams
+        - Buffereed readers are used for File Read and write opertion.
+        - Since they provide large chunk of data to read or write to file
+        ![Buffered_Streams](https://user-images.githubusercontent.com/36666451/118377003-f86f0e80-b5e8-11eb-90fb-568cb2f78c4d.png)
+
+        - Buffered Writer
+            - Linux has `\n`  for the newline
+            - Windows uses `\r\n` (carriage return and new line)
+            - Buffered writer generates new line for the current platform using the newLine() methods  
