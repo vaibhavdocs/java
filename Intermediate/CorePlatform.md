@@ -74,3 +74,29 @@
             - Linux has `\n`  for the newline
             - Windows uses `\r\n` (carriage return and new line)
             - Buffered writer generates new line for the current platform using the newLine() methods  
+
+- java.nio
+    - FileXXXX (FileReade and FileWriter), this methods are deprecated in the new library and `java.io` is replaced with `java.nio`. 
+    - InputStream and OutputStream are still in place
+    ![java nio](https://user-images.githubusercontent.com/36666451/118387522-8aeccd80-b63c-11eb-88d8-98d552acb63b.png)
+
+    - Path
+    ![path_java_nio](https://user-images.githubusercontent.com/36666451/118387686-66452580-b63d-11eb-8e7f-4b6c8fc43b49.png)
+
+    - File types
+        - Once we have the `Path` then we can use `File` to interact with it
+        ![Files](https://user-images.githubusercontent.com/36666451/118387695-72c97e00-b63d-11eb-95ac-8c95eec59216.png)
+
+        - Example
+        ```
+        try(BufferedReader br = new Files.newBufferedReader(Paths.get("data.txt")))
+        ```
+        - We can use `BufferedWriter` to write into a file or we can make use of `Files.write()` which takes care of opening, writing and closing the file
+
+    - File System 
+        - Represents a File System 
+        - Can have specilized file systems such as zip
+
+    - URI - Universal Resource Identifier
+        - URI for zip file => "jar:file"
+        - File systems are identified by URI
