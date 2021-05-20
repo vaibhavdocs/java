@@ -100,3 +100,19 @@
     - URI - Universal Resource Identifier
         - URI for zip file => "jar:file"
         - File systems are identified by URI
+
+
+- String Formatting and Regular Expressions 
+
+    - String Joiner 
+        - Lets you join the sequence of the strings based on separator, starting and ending value.
+
+    
+    - Strings with Format
+        - Format specifier  
+            - % [argument index] [flag] [width] [precision] conversion
+            - width - minimum characters to display
+            - precision - Decimal places to display
+
+            - Format Flags
+                ![format_flags](https://user-images.githubusercontent.com/36666451/119034548-19aa7300-b9cc-11eb-8086-37b3a78ff0bd.png)
