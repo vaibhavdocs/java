@@ -102,7 +102,7 @@
         - File systems are identified by URI
 
 
-- String Formatting and Regular Expressions 
+### 1.2 String Formatting and Regular Expressions 
 
     - String Joiner 
         - Lets you join the sequence of the strings based on separator, starting and ending value.
@@ -116,3 +116,6 @@
 
             - Format Flags
                 ![format_flags](https://user-images.githubusercontent.com/36666451/119034548-19aa7300-b9cc-11eb-8086-37b3a78ff0bd.png)
+
+
+### 1.3 Working with Collections
