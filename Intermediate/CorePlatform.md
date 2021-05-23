@@ -119,3 +119,13 @@
 
 
 ### 1.3 Working with Collections
+
+- Lambda
+    - Simplify passing code as argument
+        ```
+        ArrayList as = new ArrayList();
+        as.forEach(m -> m.getValue().equals("something"));
+
+        ```
+
+        
