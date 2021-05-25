@@ -128,4 +128,13 @@
 
         ```
 
-        
+
+- Comparable interface implementation provides 
+    - `compareTo` method to be implemented by the implementing class, this method is `sort()`        
+        ![sorting](https://user-images.githubusercontent.com/36666451/119545156-1fc79780-bdb0-11eb-82a3-2b93e5aff1a8.png)
+
+
+- Comparator interface has `compare(class o, class b)` to be implemented where it takes two input
+
+
+
