@@ -138,3 +138,44 @@
 
 
 ### 1.4 Controlling App Execution and Environment
+
+- Properties 
+    - can be used to persist data in key-value format
+
+    - Storing in the properties file
+        ![properties](https://user-images.githubusercontent.com/36666451/121069593-48f21a00-c7eb-11eb-8cf4-47ddaedc1fe5.png)
+
+    - We can load key-value pairs from the properties file with the help of input stream
+
+    - Properties file can be in format of simple `text file` or `xml`
+
+    - We can use class information to access the stream that provides default property implementation
+
+- `Class loading`
+    - default class loading done from the current directory and it must be in .class, not in the JAR file.
+    - CLASSPATH (default path is current directory)
+    - Specifying CLASSPATH as an environment variable 
+        ```
+            set CLASSPATH=\somedirectory
+        ```
+
+    - Paths provided as delimited list
+        - Windows: separate with ;
+        - Unix platforms: separate with : 
+        - Searched in the order they appear
+
+        - To reference classes in .class fiels
+            - Path to folder containing the package root
+        - To reference classes in the jar files
+            - Path to the jar file
+                - including the jar file name
+    
+- We can make use of `CLASSPATH` in order to use classes that are in `.class` or are in actual `JAR` file 
+
+- Class loading with the JARs
+    - Manifest file tells where to start from 
+    ![class_loading_with_JAR](https://user-images.githubusercontent.com/36666451/121082504-d0e02000-c7fb-11eb-97a4-c509412779ec.png)
+
+
+- We can use `System.getenv()` to get environment variables on a system
+
