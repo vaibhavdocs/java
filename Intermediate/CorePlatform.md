@@ -179,3 +179,35 @@
 
 - We can use `System.getenv()` to get environment variables on a system
 
+### 1.5 Capturing Application Activity using the Java Log System
+
+- Log system is centrally managed 
+    ![logger](https://user-images.githubusercontent.com/36666451/122685496-52d33e80-d229-11eb-96f7-b8f990738470.png)
+    ![logging_components](https://user-images.githubusercontent.com/36666451/122685499-549d0200-d229-11eb-9e2b-cb014f94e415.png)
+
+- Logging consists of mainly three parts 
+    - Logger
+        - Which accepts app calls
+    - Handler
+        - Publishes Logging information
+        - A logger can have multiple handlers
+        - Types of Built-in Handler 
+            - ConsoleHandler
+                - writes to System.err
+            - StreamHandler
+                - writes to OutputStream
+            - SocketHandler
+                - writes to a network socket
+            - FileHandler
+                - writes to 1 or more file
+
+    - Formattter 
+        - Formats log info for publication
+        - Each Handler has 1 Formatter
+
+- Adding a logger 
+    ![adding_a_logger](https://user-images.githubusercontent.com/36666451/122685625-3c79b280-d22a-11eb-90fc-840a6f689e24.png)
+
+- We can use `properties` file as a configuration for the loggin, that can be loaded while calling the program.
+
+- Logger hierarchy is set by using fully qualified names, that shows parent/child relation where child inherits log levels from the parent
