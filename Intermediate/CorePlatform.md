@@ -211,3 +211,66 @@
 - We can use `properties` file as a configuration for the loggin, that can be loaded while calling the program.
 
 - Logger hierarchy is set by using fully qualified names, that shows parent/child relation where child inherits log levels from the parent
+
+
+
+### 1.6 Multithreading and Concurrency
+
+- Concurreny can be defined as a process can have multiple threads that can execute at the same time and may use the resource acquired by the process.
+- With the help of Multithreading, we take full advantages of the CPU resources
+
+- Threading Foundation Types
+    - `Runnable Interface`
+        - Represents a task to be on a thread
+        - Has only one member - `run` 
+        - Implementation of this Interface allows classes to know how to run programmed instruction on the alternate thread.
+
+    - `Thread Class`
+        - Represents a thread of execution
+        - We can make use of this class. This expects implementation of the Runnable interface.
+
+
+        ```
+            public class A() implements runnable {
+                
+                public void run() {
+                    try {
+                        //does something threadfull
+
+                    } catch(Expection e) {
+
+                    }
+                    
+                }
+            }
+
+
+            public static voiud main(args[]) {
+                A a = new A();
+
+                Thread t = new Thread(A) // A implements Runnable Interface
+                t.start() // Runs the code on the alternate thread
+            }
+
+        ```
+        - thread.join() //Blocks waiting for the thread completion
+
+
+    - `Thread Pool`
+
+        - Allows to use the thread as pool where we can submit our task and expect it to run once thread a available and closing and shutdown of the thread will be taken care by the pool itself
+
+        - Idea to use Thread Pool instead of the direct thread is that it is automatically managed and not very likely bring down the whole system
+
+        - There are 2 types of the pool
+            - `ExecutorService interface`
+                - Models thread pool behaviour
+                - Can submit tasks to the queue that can be taken up depending upon the number of thread allowed to run at once
+                - Request and wait for pool shutdown
+            - `Executor Class`
+                - Methods for creating thread pools
+                    - Dynamically sized pools
+                    - Size limited pools
+                    - Pools that schedule tasks for later
+
+
